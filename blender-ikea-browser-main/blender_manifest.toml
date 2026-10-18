@@ -1,0 +1,38 @@
+schema_version = "1.0.0"
+id = "ikea_browser"
+version = "0.4.0"
+name = "IKEA Browser"
+tagline = "Search and import models from ikea.com"
+maintainer = "Shish <shish@shishnet.org>"
+type = "add-on"
+website = "https://github.com/shish/blender-ikea-browser/"
+tags = ["Import-Export"]
+blender_version_min = "4.2.0"
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+copyright = [
+  "2024 Shish",
+]
+wheels = []
+
+[permissions]
+network = "Download from ikea.com"
+files = "Store downloaded models"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "/cache/",
+  "/.git/",
+  "/.github/",
+  "/.gitignore",
+  "/.mypy_cache/",
+  "/.ruff_cache/",
+  "/venv/",
+  "/*.zip",
+  "/*.blend",
+  "/*.svg",
+  "/*.png",
+  "/*.json",
+]
